@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-    baseURL: import.meta.env.VITE_API_URL || 'https://lms-backend-2-8yyb.onrender.com/api',
+    baseURL: import.meta.env.VITE_API_URL || 'https://lms-backend-5-uzbi.onrender.com/api',
 });
 
 // Add a request interceptor to include the JWT token
