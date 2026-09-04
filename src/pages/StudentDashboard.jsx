@@ -89,7 +89,7 @@ const styles = {
         fontSize: '2.2rem',
         fontWeight: '800',
         marginBottom: '0.5rem',
-        background: 'linear-gradient(to right, #fff, #94a3b8)',
+        background: 'linear-gradient(to right, var(--primary), var(--secondary))',
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
     },
@@ -120,6 +120,7 @@ const styles = {
     statValue: {
         fontSize: '1.5rem',
         fontWeight: '700',
+        color: 'var(--text-dark)'
     },
     statName: {
         fontSize: '0.85rem',
@@ -132,6 +133,7 @@ const styles = {
         fontSize: '1.6rem',
         fontWeight: '700',
         marginBottom: '1.5rem',
+        color: 'var(--text-dark)'
     },
     courseGrid: {
         display: 'grid',

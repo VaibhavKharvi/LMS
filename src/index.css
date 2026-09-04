@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --primary: #6366f1;
-  --secondary: #a855f7;
-  --background: #0f172a;
-  --surface: #1e293b;
-  --text: #f8fafc;
-  --text-muted: #94a3b8;
-  --border: rgba(255, 255, 255, 0.1);
-  --glass: rgba(30, 41, 59, 0.7);
+  --primary: #8b5cf6;
+  --secondary: #0ea5e9;
+  --background: #f8fafc;
+  --surface: #ffffff;
+  --text-dark: #0f172a;
+  --text: #334155;
+  --text-muted: #64748b;
+  --border: rgba(0, 0, 0, 0.05);
+  --glass: rgba(255, 255, 255, 0.85);
+  --bg-light: #f1f5f9;
 }
 
 a {
@@ -32,10 +34,10 @@ body {
 
 .glass-card {
   background: var(--glass);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border);
   border-radius: 1rem;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
 }
 
 .btn-primary {
@@ -54,7 +56,28 @@ body {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 10px 15px -3px rgba(139, 92, 246, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  border-color: white;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .btn-primary:disabled {

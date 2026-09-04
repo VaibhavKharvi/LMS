@@ -16,6 +16,10 @@ import AdminUsers from './pages/AdminUsers';
 import AdminCourses from './pages/AdminCourses';
 import CoursePlayer from './pages/CoursePlayer';
 import Layout from './components/Layout';
+import PublicLayout from './components/PublicLayout';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 const DashboardSelector = () => {
     const { user } = useAuth();
@@ -37,6 +41,11 @@ function App() {
                 <Toaster position="top-right" />
                 <Router>
                     <Routes>
+                        <Route element={<PublicLayout />}>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/about" element={<About />} />
+                            <Route path="/contact" element={<Contact />} />
+                        </Route>
                         <Route path="/login" element={<Login />} />
                         <Route path="/register" element={<Register />} />
                         
@@ -121,7 +130,7 @@ function App() {
                                 </PrivateRoute>
                             }
                         />
-                        <Route path="/" element={<Navigate to="/login" />} />
+                        <Route path="*" element={<Navigate to="/" />} />
                     </Routes>
                 </Router>
             </SearchProvider>

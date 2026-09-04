@@ -50,7 +50,7 @@ const Register = () => {
                                 type="text"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
-                                placeholder="John Doe"
+                                placeholder
                                 required
                                 style={styles.input}
                             />
@@ -65,7 +65,7 @@ const Register = () => {
                                 type="email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                                placeholder="name@example.com"
+                                placeholder
                                 required
                                 style={styles.input}
                             />
@@ -167,10 +167,10 @@ const styles = {
     input: {
         width: '100%',
         padding: '0.75rem 1rem 0.75rem 2.75rem',
-        background: 'var(--surface)',
-        border: '1px solid var(--border)',
+        background: '#f1f5f9',
+        border: '1px solid rgba(0,0,0,0.1)',
         borderRadius: '0.75rem',
-        color: 'white',
+        color: 'var(--text-dark)',
         outline: 'none',
         transition: 'all 0.3s ease',
         cursor: 'pointer',

@@ -150,10 +150,10 @@ const styles = {
     input: {
         width: '100%',
         padding: '0.75rem 1rem 0.75rem 2.75rem',
-        background: 'rgba(255, 255, 255, 0.05)',
-        border: '1px solid var(--border)',
+        background: '#f1f5f9',
+        border: '1px solid rgba(0,0,0,0.1)',
         borderRadius: '0.75rem',
-        color: 'white',
+        color: 'var(--text-dark)',
         outline: 'none',
         transition: 'all 0.3s ease',
     },

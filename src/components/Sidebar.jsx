@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import Logo from './Logo';
 import { 
     LayoutDashboard, 
     BookOpen, 
@@ -42,8 +43,7 @@ const Sidebar = () => {
     return (
         <aside style={styles.sidebar} className="glass-card">
             <div style={styles.logoBox}>
-                <div style={styles.logoIcon}>A</div>
-                <h2 style={styles.logoText}>Antigravity<span>LMS</span></h2>
+                <Logo />
             </div>
 
             <nav style={styles.nav}>
